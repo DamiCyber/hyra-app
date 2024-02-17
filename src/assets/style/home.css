@@ -120,3 +120,9 @@ text {
 .box4 img {
   margin-bottom: 23px;
 }
+.teach {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

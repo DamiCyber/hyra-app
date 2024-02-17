@@ -33,6 +33,9 @@ const Hyrahome = () => {
           <p>Our app contains the 99 Names of Allah</p>
         </div>
       </div>
+      <div className="teach">
+         <h1>Our Teachings</h1>
+      </div>
     </div>
   )
 }
