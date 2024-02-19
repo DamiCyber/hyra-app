@@ -58,7 +58,7 @@ nav ul li a {
   background-color: #0802a3;
   margin-left: 10px;
 }
-button {
+.button {
   cursor: pointer;
   position: relative;
   left: 250%;

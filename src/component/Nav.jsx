@@ -16,8 +16,8 @@ const Nav = () => {
           <li><Link to="/hyrahome" class=" active" href="#">Home</Link></li>
           <li><Link to="/teaching">Our Teaching</Link></li>
           <li><Link to="/about">About Us</Link></li>
-          <li><button className='btn1'>Sign Up</button></li>
-          <li><button className='btn2'>Log In</button></li>
+          <li><Link to="/signup" className='btn1 button'>Sign Up</Link></li>
+          <li><Link to="/login" className='btn2 button'>Log In</Link></li>
         </ul>
         
       </nav>
