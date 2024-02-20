@@ -34,7 +34,30 @@ const Hyrahome = () => {
         </div>
       </div>
       <div className="teach">
-         <h1>Our Teachings</h1>
+        <h1>Our Teachings</h1>
+      </div>
+      <div className="box-family">
+        <div className="box5">
+          <h3>Pillars of Islam</h3>
+        </div>
+        <div className="box6">
+          <h3>Articles of Faith</h3>
+        </div>
+        <div className="box7">
+          <h3>Stories of the Prophet</h3>
+        </div>     
+      </div>
+      <div className="btn">
+          <h3>View all</h3>
+        </div>
+      <div className="footer">
+          <div className="text2">
+          The Prophet (S.A.W) said “Seeking knowledge is an obligation upon every Muslim”
+          <button className='stn'>Get started with us</button>
+          </div>
+          <div className="image">
+            <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013800/image_237_dnlmdy.png" alt="" />
+          </div>
       </div>
     </div>
   )

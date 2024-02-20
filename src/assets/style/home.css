@@ -66,7 +66,7 @@ text {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #FF4B91;
+  background-color: #ff4b91;
   text-align: center;
   align-items: center;
   width: 300px;
@@ -77,31 +77,31 @@ text {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #FFCD4B;
+  background-color: #ffcd4b;
   text-align: center;
-  align-items: center; 
+  align-items: center;
   width: 300px;
   height: 300px;
 }
-.box1 p{
+.box1 p {
   width: 200px;
   color: white;
   font-size: 18px;
   line-height: 25px;
 }
-.box2 p{
+.box2 p {
   width: 230px;
   color: white;
   font-size: 18px;
   line-height: 25px;
 }
-.box3 p{
+.box3 p {
   width: 210px;
   color: white;
   font-size: 18px;
   line-height: 25px;
 }
-.box4 p{
+.box4 p {
   width: 210px;
   color: white;
   font-size: 18px;
@@ -125,4 +125,95 @@ text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-family {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #4F0101;
+}
+.box5 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #0802A3;
+  width: 350px;
+  height: 250px;
+}
+.box6 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid  #FF7676;
+  width: 350px;
+  height: 250px;
+}
+.box7 {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  border: 1px solid  #FF4B91;
+  width: 350px;
+  height: 250px;
+}
+.box7 h3{
+  line-height: 40px;
+  width: 200px;
+}
+.footer{
+  background-color: #FF4B91;
+  width: 100%;
+  height: 400px;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn h3{
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  background-color: #0802A3;
+}
+.text2{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-size: 29px;
+  font-weight: 800px;
+  width: 350px;
+}
+.stn{
+  border: none;
+  margin-top: 15px;
+  color: #FF4B91;
+  font-weight: 600;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.footer{
+  display: flex;
+  padding: 90px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 130px;
 }

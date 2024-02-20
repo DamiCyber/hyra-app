@@ -13,7 +13,7 @@ const Nav = () => {
         </label>
         <label class="logo"><img src={logo} alt="" /></label>
         <ul>
-          <li><Link to="/hyrahome" class=" active" href="#">Home</Link></li>
+          <li><Link to="/" class=" active" href="#">Home</Link></li>
           <li><Link to="/teaching">Our Teaching</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/signup" className='btn1 button'>Sign Up</Link></li>
