@@ -59,6 +59,12 @@ const Hyrahome = () => {
             <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013800/image_237_dnlmdy.png" alt="" />
           </div>
       </div>
+      <div className="back">
+        <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708437763/Frame_532_zcfpzv.png" alt="" />
+      </div>
+      <div className="last">
+        <h3>2023 Copyrights: Hyra</h3>
+      </div>
     </div>
   )
 }
