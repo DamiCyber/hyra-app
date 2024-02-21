@@ -7,29 +7,35 @@
 }
 .flex {
   display: flex;
-  /* margin-top: 30px; */
   padding: 20px;
   padding-left: 300px;
   padding-right: 200px;
   justify-content: space-between;
   align-items: center;
 }
+.spa {
+  color: red;
+}
+.err {
+  color: red;
+  height: 22px;
+}
 .card {
   display: flex;
   flex-direction: column;
 }
-.form_heading{
-  margin-bottom: 10px;
+.form_heading {
+  margin-bottom: 5px;
 }
 form {
   border-radius: 10px;
-  gap: 5px;
+  gap: 3px;
   background-color: white;
   box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 40px;
-  width: 500px;
+  width: 480px;
   height: 690px;
 }
 form label {
@@ -45,6 +51,7 @@ input {
 .btns {
   cursor: pointer;
   background-color: #ffcd4b;
+  padding: 15px;
   border: none;
   border-radius: 8px;
   font-weight: 800;
@@ -54,7 +61,8 @@ input {
 }
 .btnss {
   cursor: pointer;
-  border:1px solid #ffcd4b;
+  border: 1px solid #ffcd4b;
+  padding: 15px;
   background-color: transparent;
   font-weight: 800;
   margin-top: 10px;

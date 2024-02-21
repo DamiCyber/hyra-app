@@ -26,7 +26,7 @@ const Signup = () => {
       console.log(values);
 
       if (values.password !== values.confirmpassword) {
-        setPasswordError("password not match")
+        setPasswordError("Password not match")
 
       } else {
         setPasswordError("")
@@ -42,33 +42,33 @@ const Signup = () => {
             <h3 class="form_heading">Create Account</h3>
           </div>
           <div class="field">
-            <span>{errors.name}</span>
+            <div className='err'>{errors.name}</div>
             <label for="firstname">Name</label>
             <input class="input" onChange={handleChange} name="name" type="text" value={values.name} id="username" />
           </div>
           <div class="field">
-            <span>{errors.username}</span>
+            <div className='err'>{errors.username}</div>
             <label for="lastname">Username</label>
             <input class="input" onChange={handleChange} name="username" type="text" value={values.username} id="username" />
           </div>
           <div class="field">
-            <span>{errors.email}</span>
+            <div className='err'>{errors.email}</div>
             <label for="email">Email / Phone Number</label>
             <input class="input" onChange={handleChange} name="email" type="text" value={values.email} id="email" />
           </div>
           <div class="field">
-            <span>{errors.password}</span>
+            <div className='err'>{errors.password}</div>
             <label for="password">Password</label>
             <input class="input" onChange={handleChange} name="password" value={values.password} type="password" id="password" />
           </div>
           <div class="field">
-            <span>{errors.confirmpassword}</span>
+            <div className='err'>{errors.confirmpassword}</div>
             <label for="password">Confirm password</label>
             <input class="input" onChange={handleChange} name="confirmpassword" value={values.confirmpassword} type="password" id="confirmpassword" />
-            {passwordError && <span>{passwordError}</span>}
+            {passwordError && <span className='spa'>{passwordError}</span>}
           </div>
           <button type='submit' className='btns'>Sign Up</button>
-          <button type='submit' className='btnss'>continue with Google</button>
+          <button  className='btnss'>continue with Google</button>
         </form>
         <div className="image">
           <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921291/image_249_yzkyni.png" alt="" />
