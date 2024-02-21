@@ -9,7 +9,7 @@ const Signup = () => {
     name: yup.string().required("Required").max(16).min(3),
     username: yup.string().required("Required").max(10).min(3),
     email: yup.string().email("Valid email address").required("Required"),
-    password: yup.string().matches(/^[a-zA-z0-9]{8}$/, "Enter a password with letter and number ").required("Required").max(8),
+    password: yup.string().matches(/^[a-zA-z0-9]{8}$/, "Enter a password with letter and number ").required("Required").max(8).min(8),
     confirmpassword: yup.string().matches(/^[a-zA-z0-9]{8}$/, "Password must match ").required("Required"),
   })
   let naviagte = useNavigate()
@@ -68,13 +68,18 @@ const Signup = () => {
             {passwordError && <span className='spa'>{passwordError}</span>}
           </div>
           <button type='submit' className='btns'>Sign Up</button>
-          <button  className='btnss'>continue with Google</button>
+          <button className='btnss'>continue with Google</button>
         </form>
         <div className="image">
           <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921291/image_249_yzkyni.png" alt="" />
         </div>
       </div>
-
+      <div className="back">
+        <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708437763/Frame_532_zcfpzv.png" alt="" />
+      </div>
+      <div className="last">
+        <h3>2023 Copyrights: Hyra</h3>
+      </div>
     </div>
   )
 }
