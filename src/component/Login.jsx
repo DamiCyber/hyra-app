@@ -17,7 +17,15 @@ const Login = () => {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       console.log(values);
-      naviagte("/")
+      Swal.fire({
+        title: "Hyra",
+        text: "Log In sucessful!",
+        icon: "success"
+      });
+      setTimeout(() => {
+        naviagte("/")
+      }, 1000);
+      
     }
   })
   return (
@@ -40,7 +48,7 @@ const Login = () => {
             </div>
             <div className="plex">
               <h4>Remember me</h4>
-              <Link to="#" className='lin'>Forgot Password?</Link>
+              <Link to="/forgot" className='lin'>Forgot Password?</Link>
               </div>
             <button type='submit' className='btnz'>Login</button>
             <div className="flexmon">

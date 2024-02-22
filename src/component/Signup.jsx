@@ -27,10 +27,22 @@ const Signup = () => {
 
       if (values.password !== values.confirmpassword) {
         setPasswordError("Password not match")
+        Swal.fire({
+          title: "Hyra",
+          text: "Sign Up Failed!",
+          icon: "error"
+        });
 
       } else {
         setPasswordError("")
-        naviagte('/login')
+        Swal.fire({
+          title: "Hyra",
+          text: "Sign Up sucessful!",
+          icon: "success"
+        });
+         setTimeout(() => {
+           naviagte('/login')
+         }, 1000);
       }
     }
   })
