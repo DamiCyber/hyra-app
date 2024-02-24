@@ -90,24 +90,177 @@ form label {
   display: flex;
   align-items: center;
 }
-.plex h4{
-    font-weight: 300;
+.plex h4 {
+  font-weight: 300;
 }
-.plext h4{
-    font-weight: 300;
+.plext h4 {
+  font-weight: 300;
 }
 .plext {
   cursor: pointer;
-  font-weight: 100 ;
+  font-weight: 100;
   margin-top: 30px;
   gap: 140px;
   display: flex;
   align-items: center;
 }
 .link {
-    font-weight: 600;
-    color: #0802a3;
+  font-weight: 600;
+  color: #0802a3;
 }
-.lin{
-    color: black;
+.lin {
+  color: black;
+}
+.welcome {
+  display: none;
+}
+@media (max-width: 770px) {
+  .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexall {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 430px) {
+  .flexpack {
+    width: 100%;
+    background-color: #0802a3;
+  }
+  .welcome {
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexall {
+    padding-left: 0px;
+  }
+  .formcard {
+    width: 425px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .inpu {
+    width: 345px;
+  }
+  .btnz {
+    width: 340px;
+  }
+  .plext {
+    gap: 100px;
+  }
+  .link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 405px) {
+  .flexpack {
+    width: 100%;
+    background-color: #0802a3;
+  }
+  .welcome {
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexall {
+    padding-left: 0px;
+  }
+  .formcard {
+    width: 399px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .inpu {
+    width: 330px;
+  }
+  .btnz {
+    width: 300px;
+  }
+  .plext {
+    gap: 70px;
+  }
+  .link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 380px) {
+  .flexpack {
+    width: 100%;
+    background-color: #0802a3;
+  }
+  .welcome {
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexall {
+    padding-left: 0px;
+  }
+  .formcard {
+    width: 375px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .inpu {
+    width: 300px;
+  }
+  .btnz {
+    width: 300px;
+  }
+  .plext {
+    gap: 70px;
+  }
+  .link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 325px) {
+  .flexpack {
+    width: 100%;
+    background-color: #0802a3;
+  }
+  .welcome {
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexall {
+    padding-left: 0px;
+  }
+  .formheading {
+    font-size: 15px;
+  }
+  .formcard {
+    width: 350px;
+    padding: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .inpu {
+    width: 280px;
+  }
+  .btnz {
+    width: 280px;
+  }
+  .plex {
+    font-size: 11px;
+    gap: 40px;
+  }
+  .plext h4 {
+    font-size: 13px;
+  }
+  .link {
+    font-size: 13px;
+  }
 }

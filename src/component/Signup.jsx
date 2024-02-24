@@ -29,7 +29,7 @@ const Signup = () => {
         setPasswordError("Password not match")
         Swal.fire({
           title: "Hyra",
-          text: "Sign Up Failed!",
+          text: "Incorrect Password!",
           icon: "error"
         });
 
@@ -40,15 +40,19 @@ const Signup = () => {
           text: "Sign Up sucessful!",
           icon: "success"
         });
-         setTimeout(() => {
-           naviagte('/login')
-         }, 1000);
+        setTimeout(() => {
+          naviagte('/login')
+        }, 1000);
       }
     }
   })
   return (
     <div>
-      <div className="flex">
+      <div className="all">
+      <div className="hello">
+          <h1>Hello!</h1>
+        </div>
+        <div className="flex">
         <form class="form card" onSubmit={handleSubmit}>
           <div class="card_header">
             <h3 class="form_heading">Create Account</h3>
@@ -65,7 +69,7 @@ const Signup = () => {
           </div>
           <div class="field">
             <div className='err'>{errors.email}</div>
-            <label for="email">Email / Phone Number</label>
+            <label for="email">Email</label>
             <input class="input" onChange={handleChange} name="email" type="text" value={values.email} id="email" />
           </div>
           <div class="field">
@@ -87,11 +91,12 @@ const Signup = () => {
         </div>
       </div>
       <div className="back">
-        <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708437763/Frame_532_zcfpzv.png" alt="" />
       </div>
       <div className="last">
         <h3>2023 Copyrights: Hyra</h3>
       </div>
+      </div>
+    
     </div>
   )
 }

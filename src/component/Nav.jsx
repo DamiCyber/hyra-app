@@ -7,11 +7,15 @@ const Nav = () => {
   return (
     <div className='display'>
       <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <Link to="/"><img src={bars} alt="" /></Link>
+        <label htmlFor="check" className='checkbtn' >
+          <img src={bars} alt="" />
         </label>
-        <label class="logo"><img src={logo} alt="" /></label>
+        <input type="checkbox" id="check" />
+        <label class="logo">
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
+        </label>
         <ul>
           <li><Link to="/" class=" active" href="#">Home</Link></li>
           <li><Link to="/teaching">Our Teaching</Link></li>
@@ -19,9 +23,8 @@ const Nav = () => {
           <li><Link to="/signup" className='btn1 button'>Sign Up</Link></li>
           <li><Link to="/login" className='btn2 button'>Log In</Link></li>
         </ul>
-        
+
       </nav>
-     
     </div>
   )
 }

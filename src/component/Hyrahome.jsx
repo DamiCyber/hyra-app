@@ -1,5 +1,6 @@
 import React from 'react'
 import "../assets/style/home.css"
+import { Link } from 'react-router-dom'
 const Hyrahome = () => {
   return (
     <div>
@@ -37,30 +38,36 @@ const Hyrahome = () => {
         <h1>Our Teachings</h1>
       </div>
       <div className="box-family">
-        <div className="box5">
-          <h3>Pillars of Islam</h3>
-        </div>
-        <div className="box6">
-          <h3>Articles of Faith</h3>
-        </div>
-        <div className="box7">
-          <h3>Stories of the Prophet</h3>
-        </div>     
+        <Link to="/pillar" className='box5'>
+          <div className="box5">
+            <h3>Pillars of Islam</h3>
+          </div>
+        </Link>
+        <Link to="/article">
+          <div className="box6">
+            <h3>Articles of Faith</h3>
+          </div>
+        </Link>
+        <Link to="/story">
+          <div className="box7">
+            <h3>Stories of the Prophet</h3>
+          </div>
+        </Link>
       </div>
       <div className="btn">
-          <h3>View all</h3>
-        </div>
+        <h3>View all</h3>
+      </div>
       <div className="footer">
-          <div className="text2">
-          The Prophet (S.A.W) said “Seeking knowledge is an obligation upon every Muslim”
+        <div className="text2">
+          <h2>The Prophet (S.A.W) said “Seeking knowledge is an obligation upon every Muslim”</h2>
           <button className='stn'>Get started with us</button>
-          </div>
-          <div className="image">
-            <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013800/image_237_dnlmdy.png" alt="" />
-          </div>
+        </div>
+        <div className="images">
+          <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013800/image_237_dnlmdy.png" alt="" />
+        </div>
       </div>
       <div className="back">
-        <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708437763/Frame_532_zcfpzv.png" alt="" />
+
       </div>
       <div className="last">
         <h3>2023 Copyrights: Hyra</h3>
