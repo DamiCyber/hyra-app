@@ -321,6 +321,7 @@ body{
   }
  
   .box1 p{
+    width: 150px;
    line-height: 20px;
    font-size: 12px;
   }
@@ -330,10 +331,12 @@ body{
    font-size: 12px;
   }
   .box3 p{
+    width: 170px;
     line-height: 20px;
    font-size:12px;
   }
   .box4 p{
+    width: 120px;
     line-height: 20px;
    font-size: 12px;
   }
@@ -351,19 +354,19 @@ body{
   }
   .box1{
     width: 180px;
-    height: 200px;
+    height: 206px;
   }
   .box2{
     width: 180px;
-    height: 200px;
+    height: 206px;
   }
   .box3{
     width: 180px;
-    height: 200px;
+    height: 206px;
   }
   .box4{
     width: 180px;
-    height: 200px;
+    height: 206px;
   }
   .box5{
     width: 200px;
