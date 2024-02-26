@@ -120,7 +120,7 @@ ul li :hover {
   nav ul li {
     display: block;
     margin: 1px 0;
-    line-height: 100px;
+    line-height: 80px;
   }
   nav ul li a {
     font-size: 20px;

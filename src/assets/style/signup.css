@@ -126,6 +126,7 @@ input {
     padding-left:20px;
   }
   .all{
+    height:150vh;
     background-color: #ffcd4b;
   }
   .image{
@@ -169,7 +170,7 @@ input {
     padding-left:20px;
   }
   .all{
-    height: 100vh;
+    height:150vh;
     background-color: #ffcd4b;
   }
   .image{
@@ -204,10 +205,11 @@ input {
 }
 @media(max-width:380px){
   .all{
+    height:150vh;
     background-color: #ffcd4b;
   }
   .flex{  
-    padding-left:0px;
+    padding-left:8px;
   }
   .image img{
     width:150px;
@@ -239,6 +241,7 @@ input {
 }
 @media(max-width:325px){
   .all{
+    height:150vh;
     background-color: #ffcd4b;
   }
   .flex{  

@@ -1,27 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../assets/style/style.css"
 import logo from "../assets/images/logo.png"
 import bars from "../assets/images/bar.png"
 import { Link } from 'react-router-dom'
 const Nav = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    // Close the menu after 300 milliseconds (adjust as needed)
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
+  }
   return (
     <div className='display'>
       <nav>
         <label htmlFor="check" className='checkbtn' >
           <img src={bars} alt="" />
         </label>
-        <input type="checkbox" id="check" />
+        <input type="checkbox" id="check" checked={isOpen} onChange={() => setIsOpen(!isOpen)} />
         <label class="logo">
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
         </label>
         <ul>
-          <li><Link to="/" class=" active" href="#">Home</Link></li>
-          <li><Link to="/teaching">Our Teaching</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/signup" className='btn1 button'>Sign Up</Link></li>
-          <li><Link to="/login" className='btn2 button'>Log In</Link></li>
+          <li><Link to="/" class=" active" href="#" onClick={handleLinkClick}>Home</Link></li>
+          <li><Link to="/teaching" onClick={handleLinkClick}>Our Teaching</Link></li>
+          <li><Link to="/about" onClick={handleLinkClick}>About Us</Link></li>
+          <li><Link to="/signup" className='btn1 button' onClick={handleLinkClick}>Sign Up</Link></li>
+          <li><Link to="/login" className='btn2 button' onClick={handleLinkClick}>Log In</Link></li>
         </ul>
 
       </nav>
