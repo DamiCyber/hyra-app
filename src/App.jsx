@@ -8,9 +8,6 @@ import Login from './component/Login'
 import Signup from './component/Signup'
 import Forgotten from './component/Forgotten'
 import Search from './component/Search' 
-import Pillar from "./component/Pillar"
-import Story from "./component/Story"
-import Article from "./component/Article"
 import Resend from './component/Resend'
 const App = () => {
   const [ DeferredPrompt,  setDeferredPrompt] = useState("")
@@ -46,9 +43,6 @@ const App = () => {
            <Route path='/' element={<Hyrahome/>}/>
            <Route path='/teaching' element={<Ourteaching/>}/>
            <Route path='/about' element={<About/>}/>
-           <Route path='/story' element={<Story/>}/>
-           <Route path='/pillar' element={<Pillar/>}/>
-           <Route path='/article' element={<Article/>}/>
          </Route>
          <Route>
          <Route path='/signup' element={<Signup/>}/>
