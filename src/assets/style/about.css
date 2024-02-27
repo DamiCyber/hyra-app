@@ -55,3 +55,165 @@
     font-size: 19px;
     width: 330px;
   }
+  @media(max-width:770px){
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .about-img{
+        margin-left: 100px;
+      }
+      .about-text{
+        margin-left: 150px;
+        text-align: center;
+      }
+      .aboutwo{
+        background-color: #0802A3CC;
+        padding: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .abouthree{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .aboutfour{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      
+  }
+  @media(max-width:430px){
+    .about{
+        display: flex;
+        padding: 0px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .about-img{
+        margin-top: 15px;
+      }
+      .about-img img{
+        width: 250px;
+        margin-left:0px;
+      }
+      .about-text{
+        margin-left: 60px;
+        text-align: center;
+      }
+      .aboutwo{
+        background-color: #0802A3CC;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .abouthree{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .aboutfour{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      
+  }
+  @media(max-width:380px){
+    .about{
+        display: flex;
+        padding: 0px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .about-img{
+        margin-top: 15px;
+      }
+      .about-img img{
+        width: 200px;
+        margin-left:0px;
+      }
+      .about-text{
+        margin-left: 20px;
+        /* margin-left: 60px; */
+        text-align: center;
+      }
+      .aboutwo{
+        background-color: #0802A3CC;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .abouthree{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .aboutfour{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      
+  }
+  @media(max-width:330px){
+    .about{
+        display: flex;
+        padding: 0px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .about-img{
+        margin-left: 50px;
+        margin-top: 15px;
+      }
+      .about-img img{
+        width: 200px;
+        margin-left:0px;
+      }
+      .about-text{
+        margin-left: 5px;
+      }
+      .about-text h1{
+        font-size: 19px;
+        margin-left: 50px;
+        width: 200px;
+        text-align: center;
+      }
+      .about-text p{
+        margin-left: 0px;
+        font-size: 18px;
+        width: 300px;
+      }
+      .aboutwo{
+        width: 100%;
+        background-color: #0802A3CC;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .abouthree{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .aboutfour{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      
+  }
