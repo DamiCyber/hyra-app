@@ -239,6 +239,42 @@ input {
     display: none;
   }
 }
+@media(max-width:367px){
+  .all{
+    height:150vh;
+    background-color: #ffcd4b;
+  }
+  .flex{  
+    padding-left:8px;
+  }
+  .image img{
+    width:150px;
+  }
+  input{
+    gap: 10px;
+    width: 300px;
+    height: 35px;
+  }
+  form{
+    margin-top: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 345px;
+    height: 560px;
+  }
+  .btns{
+    width: 300px;
+  }
+  .btnss{
+    display: none;
+  }
+  .back{
+    display: none;
+  }
+  .last{
+    display: none;
+  }
+}
 @media(max-width:325px){
   .all{
     height:150vh;
