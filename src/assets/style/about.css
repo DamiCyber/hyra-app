@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  .about{
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .aboutwo{
+    background-color: #0802A3CC;
+    padding: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .aboutwo p{
+    color: white;
+    line-height: 30px;
+    font-size: 19px;
+    width: 320px;
+  }
+  .about h1{
+    width: 350px;
+    line-height: 45px;
+  }
+  .about p{
+    line-height: 30px;
+    font-size: 19px;
+    width: 320px;
+  }
+  .abouthree{
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .abouthree p{
+    line-height: 30px;
+    font-size: 19px;
+    width: 350px;
+  }
+  .aboutfour{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #FF4B91;
+  }
+  .aboutfour p{
+    color: white;
+    line-height: 30px;
+    font-size: 19px;
+    width: 330px;
+  }
