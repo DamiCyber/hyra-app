@@ -158,6 +158,10 @@
         flex-direction: column-reverse;
         justify-content: space-around;
       }
+      .abouthree p{
+        margin-left: 55px;
+        width: 250px;
+      }
       .aboutfour{
         padding: 0px;
         display: flex;
@@ -208,6 +212,10 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+      }
+      .abouthree p{
+        margin-left: 20px;
+        width: 260px;
       }
       .aboutfour{
         padding: 0px;
