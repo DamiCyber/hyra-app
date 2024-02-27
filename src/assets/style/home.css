@@ -544,6 +544,140 @@ body{
   margin-top: 40px;
 }
 }
+@media (max-width:368px) {
+  label.logo{
+   margin-left:40px;
+  }
+  .img img{
+    width: 250px;
+  }
+  .flex-mother {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .text{
+    margin: 0px;
+  }
+  .text h1 {
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 80%;
+  }
+  .text p {
+    width: 75%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  .box-flex {
+    padding: 0px;
+    margin-left: 7px;
+    display: grid !important;
+    gap: 5px;
+    grid-template-columns: 2fr 2fr;
+  }
+  .why{
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+ 
+  .box1 p{
+    width: 120px;
+   line-height: 20px;
+   font-size: 12px;
+  }
+  .box2 p{
+    width: 180px;
+    line-height: 20px;
+   font-size: 12px;
+  }
+  .box3 p{
+    width: 120px;
+    line-height: 20px;
+   font-size:12px;
+  }
+  .box4 p{
+    width: 120px;
+    line-height: 20px;
+   font-size: 12px;
+  }
+  .box5 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
+  .box6 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
+  .box7 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
+  .box1{
+    width: 170px;
+    height: 250px;
+  }
+  .box2{
+    width: 170px;
+    height: 250px;
+  }
+  .box3{
+    width: 170px;
+    height: 250px;
+  }
+  .box4{
+    width: 170px;
+    height: 250px;
+  }
+  .box5{
+    width: 170px;
+    height: 200px;
+  }
+  .box6{
+    width: 170px;
+    height: 200px;
+  }
+  .box7{
+    width: 170px;
+    height: 200px;
+  }
+  .box-family {
+    gap: 10px;
+    display: grid !important;
+    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+  }
+  .footer {
+    width: 100%;
+    padding:0px;
+    font-size: 23px;
+  }
+  .images{
+    margin-right: 40px;
+  }
+  .images img{
+    width: 140px;
+  }
+  .back{
+    width: 100%;
+    height: 40px;
+  }
+  .back img {
+    width: 100%;
+    height: 40px;
+  }
+.text2 h2{
+  width: 200px;
+  font-size: 17px;
+}
+.stn{
+  padding: 15px;
+  margin-top: 40px;
+}
+}
 @media (max-width:405px) {
   label.logo{
    margin-left:40px;
@@ -659,7 +793,7 @@ body{
     margin-right: 40px;
   }
   .images img{
-    width: 170px;
+    width: 150px;
   }
   .back{
     width: 100%;
