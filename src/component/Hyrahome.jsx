@@ -38,21 +38,15 @@ const Hyrahome = () => {
         <h1>Our Teachings</h1>
       </div>
       <div className="box-family">
-        <Link to="/pillar" className='box5'>
-          <div className="box5">
-            <h3>Pillars of Islam</h3>
-          </div>
-        </Link>
-        <Link to="/article">
-          <div className="box6">
-            <h3>Articles of Faith</h3>
-          </div>
-        </Link>
-        <Link to="/story">
-          <div className="box7">
-            <h3>Stories of the Prophet</h3>
-          </div>
-        </Link>
+        <div className="box5">
+          <h3>Pillars of Islam</h3>
+        </div>
+        <div className="box6">
+          <h3>Articles of Faith</h3>
+        </div>
+        <div className="box7">
+          <h3>Stories of the Prophet</h3>
+        </div>
       </div>
       <div className="btn">
         <h3>View all</h3>
