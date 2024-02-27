@@ -127,6 +127,9 @@
       
   }
   @media(max-width:380px){
+    body{
+        overflow-x: hidden;
+    }
     .about{
         display: flex;
         padding: 0px;
