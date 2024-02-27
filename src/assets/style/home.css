@@ -7,7 +7,7 @@
 }
 .flex-mother {
   position: relative;
-  padding: 9cqw;
+  padding: 90px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -19,14 +19,14 @@ text {
   margin-left: 100px;
   line-height: 50px;
   font-size: 40px;
-  width:60%;
+  width:50%;
   margin-bottom: 20px;
 }
 .text p {
   margin-left: 100px;
   line-height: 30px;
   font-size: 20px;
-  width: 40%;
+  width: 36%;
 }
 .why {
   display: flex;
