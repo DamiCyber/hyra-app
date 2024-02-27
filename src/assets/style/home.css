@@ -7,7 +7,7 @@
 }
 .flex-mother {
   position: relative;
-  padding: 80px;
+  padding: 9cqw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -26,7 +26,7 @@ text {
   margin-left: 100px;
   line-height: 30px;
   font-size: 20px;
-  width: 50%;
+  width: 40%;
 }
 .why {
   display: flex;
