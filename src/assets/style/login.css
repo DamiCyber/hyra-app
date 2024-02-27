@@ -264,3 +264,44 @@ form label {
     font-size: 13px;
   }
 }
+@media (max-width: 368px) {
+  .flexpack {
+    width: 100%;
+    background-color: #0802a3;
+  }
+  .welcome {
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexall {
+    padding-left: 7px;
+  }
+  .formheading {
+    font-size: 15px;
+  }
+  .formcard {
+    width: 390px;
+    padding: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .inpu {
+    width: 310px;
+  }
+  .btnz {
+    width: 280px;
+  }
+  .plex {
+    font-size: 11px;
+    gap: 20px;
+  }
+  .plext h4 {
+    font-size: 13px;
+  }
+  .link {
+    font-size: 13px;
+  }
+}
