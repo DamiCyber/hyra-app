@@ -137,10 +137,10 @@ form label {
     align-items: center;
   }
   .flexall {
-    padding-left: 0px;
+    padding-left: 13px;
   }
   .formcard {
-    width: 425px;
+    width: 400px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
@@ -203,10 +203,10 @@ form label {
     align-items: center;
   }
   .flexall {
-    padding-left: 0px;
+    padding-left: 8px;
   }
   .formcard {
-    width: 375px;
+    width: 360px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
@@ -217,7 +217,7 @@ form label {
     width: 300px;
   }
   .plext {
-    gap: 70px;
+    gap: 40px;
   }
   .link {
     font-size: 13px;
