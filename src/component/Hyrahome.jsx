@@ -1,6 +1,5 @@
 import React from 'react'
 import "../assets/style/home.css"
-import { Link } from 'react-router-dom'
 const Hyrahome = () => {
   return (
     <div>
