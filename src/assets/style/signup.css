@@ -658,7 +658,7 @@ input {
     height: 35px;
   }
   form{
-    margin-top: 40px;
+    margin-top: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 375px;
@@ -834,7 +834,7 @@ input {
     height: 35px;
   }
   form{
-    margin-top: 40px;
+    margin-top: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 345px;
@@ -1011,7 +1011,7 @@ input {
   }
   form{
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 320px;
