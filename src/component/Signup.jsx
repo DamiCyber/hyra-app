@@ -78,29 +78,29 @@ const Signup = () => {
 
   if (loading) {
     return <div>
-     <div className="center">
-     <div className="imag">
-        <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921289/logo_ozfrac.png" alt="" />
+      <div className="center">
+        <div className="imag">
+          <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921289/logo_ozfrac.png" alt="" />
+        </div>
+        <div class="loader">
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+        </div>
       </div>
-      <div class="loader">
-        <div class="circle">
-          <div class="dot"></div>
-          <div class="outline"></div>
-        </div>
-        <div class="circle">
-          <div class="dot"></div>
-          <div class="outline"></div>
-        </div>
-        <div class="circle">
-          <div class="dot"></div>
-          <div class="outline"></div>
-        </div>
-        <div class="circle">
-          <div class="dot"></div>
-          <div class="outline"></div>
-        </div>
-      </div>
-     </div>
     </div>;
   }
 
