@@ -22,7 +22,7 @@ body{
 }
 .err {
   color: red;
-  height: 22px;
+  height: 35px;
 }
 .card {
   display: flex;
@@ -39,8 +39,9 @@ form {
   -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 40px;
+  /* padding-top: 4px; */
   width: 480px;
-  height: 690px;
+  height: 750px;
 }
 form label {
   display: flex;
