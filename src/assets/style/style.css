@@ -58,6 +58,7 @@ nav ul li a {
 .button {
   cursor: pointer;
   position: relative;
+  left: 250%;
   padding: 7px;
   padding-left: 30px;
   padding-right: 30px;
