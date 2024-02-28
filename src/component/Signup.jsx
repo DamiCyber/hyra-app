@@ -69,28 +69,39 @@ const Signup = () => {
   });
 
   const google = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // Handle successful sign-in
-        console.log(result.user);
-        setPasswordError("")
-        Swal.fire({
-          title: "Hyra",
-          text: "Sign Up successful!",
-          icon: "success"
+
+    
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          // Handle successful sign-in
+          console.log(result.user);
+          setPasswordError("")
+          Swal.fire({
+            title: "Hyra",
+            text: "Sign Up successful!",
+            icon: "success"
+          });
+          setTimeout(() => {
+            navigate('/')
+          }, 1000);
+        })
+        .catch((error) => {
+          // Handle errors
+          console.log(error.message);
+          if (error.message !== "auth/internal-error") {
+              console.log("online");
+            
+          } else{
+            console.log("offline");
+          }
         });
-        setTimeout(() => {
-          navigate('/')
-        }, 1000);
-      })
-      .catch((error) => {
-        // Handle errors
-        console.error(error);
-      });
-  };
-  window.google = google
+       
+    }    
+    window.google = google
+
   return (
     <div>
+     
       <div className="all">
         <div className="hello">
           <h1>Hello!</h1>
@@ -98,6 +109,7 @@ const Signup = () => {
         <div className="flex">
           <form className="form card" onSubmit={handleSubmit}>
             <div className="card_header">
+               <div id="disp"></div>
               <h3 className="form_heading">Create Account</h3>
             </div>
             <div className="field">
@@ -127,7 +139,7 @@ const Signup = () => {
               {passwordError && <span className='spa'>{passwordError}</span>}
             </div>
             <button type='submit' className='btns'>Sign Up</button>
-            <button className='btnss' onClick={google}>continue with Google</button>
+            <button type='button' className='btnss' onClick={google}>continue with Google</button>
           </form>
           <div className="image">
             <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921291/image_249_yzkyni.png" alt="" />

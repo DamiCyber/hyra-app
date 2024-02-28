@@ -23,7 +23,7 @@ const Login = () => {
         icon: "success"
       });
       setTimeout(() => {
-        naviagte("/")
+        naviagte("/home")
       }, 1000);
 
     }
