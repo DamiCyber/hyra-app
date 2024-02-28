@@ -39,7 +39,6 @@ form {
   -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 40px;
-  /* padding-top: 4px; */
   width: 480px;
   height: 750px;
 }
@@ -111,7 +110,7 @@ input {
   }
   form{
     width: 400px;
-    height: 600px;
+    height: 680px;
   }
   .btns{
     width: 300px;
@@ -149,7 +148,7 @@ input {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 400px;
-    height: 560px;
+    height: 650px;
   }
   .btns{
     width: 300px;
@@ -193,7 +192,7 @@ input {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 400px;
-    height: 560px;
+    height: 650px;
   }
   .btns{
     width: 300px;
@@ -229,7 +228,7 @@ input {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 375px;
-    height: 560px;
+    height: 650px;
   }
   .btns{
     width: 300px;
@@ -265,7 +264,7 @@ input {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 345px;
-    height: 560px;
+    height: 650px;
   }
   .btns{
     width: 300px;
@@ -302,7 +301,7 @@ input {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 320px;
-    height: 560px;
+    height: 650px;
   }
   .btns{
     width: 260px;
