@@ -173,6 +173,57 @@
       }
       
   }
+  @media(max-width:365px){
+    body{
+        overflow-x: hidden;
+    }
+    .about{
+        display: flex;
+        padding: 0px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .about h1{
+        width: 320px;
+      }
+      .about-img{
+        margin-left: 80px;
+        margin-top: 15px;
+      }
+      .about-img img{
+        width: 200px;
+        margin-left:0px;
+      }
+      .about-text{
+        margin-left: 15px;
+        /* margin-left: 60px; */
+        text-align: center;
+      }
+      .aboutwo{
+        background-color: #0802A3CC;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .abouthree{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      .abouthree p{
+        margin-left: 55px;
+        width: 250px;
+      }
+      .aboutfour{
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      
+  }
   @media(max-width:330px){
     .about{
         display: flex;
