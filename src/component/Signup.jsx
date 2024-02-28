@@ -1,7 +1,7 @@
 
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import "../assets/style/signup.css"
 import { useFormik } from 'formik';
 import { useNavigate } from 'react-router-dom';
@@ -23,12 +23,13 @@ const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
 const Signup = () => {
+  const [loading, setLoading] = useState(false);
   const [passwordError, setPasswordError] = useState("");
   const validationSchema = yup.object({
     name: yup.string().required("Required").max(16).min(3),
     username: yup.string().required("Required").max(10).min(3),
     email: yup.string().email("Valid email address").required("Required"),
-    password: yup.string().matches(/^[a-zA-Z0-9]{1,8}$/, "Password must be at most 8 characters and contain only letters and numbers").required("Required"),  
+    password: yup.string().matches(/^[a-zA-Z0-9]{1,8}$/, "Password must be at most 8 characters and contain only letters and numbers").required("Required"),
     confirmpassword: yup.string().matches(/^[a-zA-z0-9]{8}$/, "Password must match ").required("Required"),
   });
 
@@ -68,40 +69,74 @@ const Signup = () => {
     }
   });
 
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
+  }, []);
+
+  if (loading) {
+    return <div>
+     <div className="center">
+     <div className="imag">
+        <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921289/logo_ozfrac.png" alt="" />
+      </div>
+      <div class="loader">
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+      </div>
+     </div>
+    </div>;
+  }
+
   const google = () => {
 
-    
-      signInWithPopup(auth, provider)
-        .then((result) => {
-          // Handle successful sign-in
-          console.log(result.user);
-          setPasswordError("")
-          Swal.fire({
-            title: "Hyra",
-            text: "Sign Up successful!",
-            icon: "success"
-          });
-          setTimeout(() => {
-            navigate('/')
-          }, 1000);
-        })
-        .catch((error) => {
-          // Handle errors
-          console.log(error.message);
-          if (error.message !== "auth/internal-error") {
-              console.log("online");
-            
-          } else{
-            console.log("offline");
-          }
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // Handle successful sign-in
+        console.log(result.user);
+        setPasswordError("")
+        Swal.fire({
+          title: "Hyra",
+          text: "Sign Up successful!",
+          icon: "success"
         });
-       
-    }    
-    window.google = google
+        setTimeout(() => {
+          navigate('/')
+        }, 1000);
+      })
+      .catch((error) => {
+        // Handle errors
+        console.log(error.message);
+        if (error.message !== "auth/internal-error") {
+          console.log("online");
+
+        } else {
+          console.log("offline");
+        }
+      });
+
+  }
+  window.google = google
 
   return (
     <div>
-     
+
       <div className="all">
         <div className="hello">
           <h1>Hello!</h1>
@@ -109,7 +144,7 @@ const Signup = () => {
         <div className="flex">
           <form className="form card" onSubmit={handleSubmit}>
             <div className="card_header">
-               <div id="disp"></div>
+              <div id="disp"></div>
               <h3 className="form_heading">Create Account</h3>
             </div>
             <div className="field">
