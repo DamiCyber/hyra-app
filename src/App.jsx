@@ -39,15 +39,15 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Signup />} />
 
         <Route path="/" element={<Layout />} >
-          <Route path='/home' element={<Hyrahome />} />
+          <Route path='/' element={<Hyrahome />} />
           <Route path='/teaching' element={<Ourteaching />} />
           <Route path='/about' element={<About />} />
         </Route>
 
         <Route>
+        <Route path='/signup' element={<Signup />} />
           <Route path='/resend' element={<Resend />} />
           <Route path='/forgot' element={<Forgotten />} />
           <Route path='/login' element={<Login />} />
