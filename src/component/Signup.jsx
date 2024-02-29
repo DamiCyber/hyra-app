@@ -50,7 +50,7 @@ const Signup = () => {
         setPasswordError("Password not match")
         Swal.fire({
           title: "Hyra",
-          text: "Incorrect Password!",
+          text: "Password does not Match!",
           icon: "error"
         });
 
