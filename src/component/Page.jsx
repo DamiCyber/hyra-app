@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import "../assets/style/signup.css"
 const Page = () => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();

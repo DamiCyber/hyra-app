@@ -81,19 +81,23 @@ const Signup = () => {
           icon: "success"
         });
         setTimeout(() => {
-          navigate('/')
+          navigate('/home')
         }, 1000);
       })
       .catch((error) => {
         // Handle errors
-        console.log(error.message);
-        if (error.message !== "auth/internal-error") {
-          console.log("offline");
-
+        console.log(error.code);
+        if (error.code === "auth/internal-error") {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "You are Offline!",
+          });
         } else {
-          console.log("online");
+         
         }
       });
+
 
   }
   window.google = google

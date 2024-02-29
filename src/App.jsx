@@ -40,7 +40,6 @@ const App = () => {
   return (
     <>
       <Routes>
-
           <Route path='/' element={<Page />} />
         <Route path="/" element={<Layout />} >
           <Route path='/home' element={<Hyrahome />} />
