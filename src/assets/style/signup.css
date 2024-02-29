@@ -5,7 +5,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body {
   width: 100%;
   height: 100vh;
 }
@@ -73,15 +73,15 @@ input {
   width: 400px;
   height: 50px;
 }
-.back{
+.back {
   height: 40px;
   background-color: black;
 }
-.back img{
+.back img {
   width: 100%;
   height: 60px;
 }
-.last{
+.last {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,23 +90,23 @@ input {
   font-size: 12px;
   color: white;
   text-align: center;
-  background-color: #0802A3;
+  background-color: #0802a3;
 }
-.hello{
+.hello {
   display: none;
 }
-.imag img{
+.imag img {
   width: 200px;
 }
-.imag{
+.imag {
   margin-top: 150px;
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  --color:#ffcd4b;
+  --color: #ffcd4b;
   --animation: 2s ease-in-out infinite;
 }
 .loader {
@@ -114,7 +114,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  --color:#ffcd4b;
+  --color: #ffcd4b;
   --animation: 2s ease-in-out infinite;
 }
 
@@ -249,71 +249,73 @@ input {
     opacity: 0;
   }
 }
-@media(max-width:770px){
-  .flex{
-    padding-left:100px;
+@media (max-width: 770px) {
+  .flex {
+    padding-left: 100px;
   }
 
-  .image img{
-    width:150px;
+  .image img {
+    width: 150px;
   }
-  input{
+  input {
     gap: 10px;
     width: 300px;
     height: 35px;
   }
-  form{
+  form {
     width: 400px;
     height: 680px;
   }
-  .btns{
+  .btns {
     width: 300px;
   }
-  .btnss{
+  .btnss {
     width: 300px;
   }
 }
-@media(max-width:430px){
-  .hello{
+@media (max-width: 430px) {
+  body {
+    height: 100vh;
+  }
+  .hello {
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .flex{  
-    padding-left:20px;
+  .flex {
+    padding-left: 20px;
   }
-  .all{
-    height:150vh;
+  .all {
     background-color: #ffcd4b;
   }
-  .image{
+  .image {
     display: none;
   }
-  .image img{
-    width:150px;
+  .image img {
+    width: 150px;
   }
-  input{
+  input {
     gap: 10px;
     width: 300px;
     height: 35px;
   }
-  form{
+  form {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 400px;
     height: 650px;
   }
-  .btns{
+  .btns {
     width: 300px;
   }
-  .btnss{
+  .btnss {
     display: none;
   }
-  .back{
+  .back {
     display: none;
   }
-  .last{
+  .last {
     display: none;
   }
   .loader {
@@ -321,10 +323,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    --color:#ffcd4b;
+    --color: #ffcd4b;
     --animation: 2s ease-in-out infinite;
   }
-  
+
   .loader .circle {
     display: flex;
     align-items: center;
@@ -338,7 +340,7 @@ input {
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
-  
+
   .loader .circle .dot {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -348,7 +350,7 @@ input {
     background-color: #ffcd4b;
     animation: dot-keys var(--animation);
   }
-  
+
   .loader .circle .outline {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -357,90 +359,90 @@ input {
     border-radius: 50%;
     animation: outline-keys var(--animation);
   }
-  
+
   .circle:nth-child(2) {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(2) .dot {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) .dot {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) .dot {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) .dot {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(1) .outline {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(2) .outline {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(3) .outline {
     animation-delay: 1.5s;
   }
-  
+
   .circle:nth-child(4) .outline {
     animation-delay: 1.8s;
   }
-  
+
   .circle:nth-child(5) .outline {
     animation-delay: 2.1s;
   }
-  
+
   @keyframes circle-keys {
     0% {
       transform: scale(1);
       opacity: 1;
     }
-  
+
     50% {
       transform: scale(1.5);
       opacity: 0.5;
     }
-  
+
     100% {
       transform: scale(1);
       opacity: 1;
     }
   }
-  
+
   @keyframes dot-keys {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(0);
     }
-  
+
     100% {
       transform: scale(1);
     }
   }
-  
+
   @keyframes outline-keys {
     0% {
       transform: scale(0);
@@ -448,7 +450,7 @@ input {
       outline-offset: 0;
       opacity: 1;
     }
-  
+
     100% {
       transform: scale(1);
       outline: solid 0 transparent;
@@ -457,47 +459,50 @@ input {
     }
   }
 }
-@media(max-width:405px){
-  .hello{
+@media (max-width: 405px) {
+  body {
+    height: 100vh;
+  }
+  .hello {
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .flex{  
-    padding-left:20px;
+  .flex {
+    padding-left: 20px;
   }
-  .all{
-    height:150vh;
+  .all {
     background-color: #ffcd4b;
   }
-  .image{
+  .image {
     display: none;
   }
-  .image img{
-    width:150px;
+  .image img {
+    width: 150px;
   }
-  input{
+  input {
     gap: 10px;
     width: 300px;
     height: 35px;
   }
-  form{padding-left: 20px;
+  form {
+    padding-left: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 400px;
     height: 650px;
   }
-  .btns{
+  .btns {
     width: 300px;
   }
-  .btnss{
+  .btnss {
     display: none;
   }
-  .back{
+  .back {
     display: none;
   }
-  .last{
+  .last {
     display: none;
   }
   .loader {
@@ -505,10 +510,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    --color:#ffcd4b;
+    --color: #ffcd4b;
     --animation: 2s ease-in-out infinite;
   }
-  
+
   .loader .circle {
     display: flex;
     align-items: center;
@@ -522,7 +527,7 @@ input {
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
-  
+
   .loader .circle .dot {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -532,7 +537,7 @@ input {
     background-color: #ffcd4b;
     animation: dot-keys var(--animation);
   }
-  
+
   .loader .circle .outline {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -541,90 +546,90 @@ input {
     border-radius: 50%;
     animation: outline-keys var(--animation);
   }
-  
+
   .circle:nth-child(2) {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(2) .dot {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) .dot {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) .dot {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) .dot {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(1) .outline {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(2) .outline {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(3) .outline {
     animation-delay: 1.5s;
   }
-  
+
   .circle:nth-child(4) .outline {
     animation-delay: 1.8s;
   }
-  
+
   .circle:nth-child(5) .outline {
     animation-delay: 2.1s;
   }
-  
+
   @keyframes circle-keys {
     0% {
       transform: scale(1);
       opacity: 1;
     }
-  
+
     50% {
       transform: scale(1.5);
       opacity: 0.5;
     }
-  
+
     100% {
       transform: scale(1);
       opacity: 1;
     }
   }
-  
+
   @keyframes dot-keys {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(0);
     }
-  
+
     100% {
       transform: scale(1);
     }
   }
-  
+
   @keyframes outline-keys {
     0% {
       transform: scale(0);
@@ -632,7 +637,7 @@ input {
       outline-offset: 0;
       opacity: 1;
     }
-  
+
     100% {
       transform: scale(1);
       outline: solid 0 transparent;
@@ -641,39 +646,41 @@ input {
     }
   }
 }
-@media(max-width:380px){
-  .all{
-    height:150vh;
+@media (max-width: 380px) {
+  body {
+    height: 100vh;
+  }
+  .all {
     background-color: #ffcd4b;
   }
-  .flex{  
-    padding-left:8px;
+  .flex {
+    padding-left: 8px;
   }
-  .image img{
-    width:150px;
+  .image img {
+    width: 150px;
   }
-  input{
+  input {
     gap: 10px;
     width: 300px;
     height: 35px;
   }
-  form{
+  form {
     margin-top: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 375px;
     height: 650px;
   }
-  .btns{
+  .btns {
     width: 300px;
   }
-  .btnss{
+  .btnss {
     display: none;
   }
-  .back{
+  .back {
     display: none;
   }
-  .last{
+  .last {
     display: none;
   }
   .loader {
@@ -681,10 +688,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    --color:#ffcd4b;
+    --color: #ffcd4b;
     --animation: 2s ease-in-out infinite;
   }
-  
+
   .loader .circle {
     display: flex;
     align-items: center;
@@ -698,7 +705,7 @@ input {
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
-  
+
   .loader .circle .dot {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -708,7 +715,7 @@ input {
     background-color: #ffcd4b;
     animation: dot-keys var(--animation);
   }
-  
+
   .loader .circle .outline {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -717,90 +724,90 @@ input {
     border-radius: 50%;
     animation: outline-keys var(--animation);
   }
-  
+
   .circle:nth-child(2) {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(2) .dot {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) .dot {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) .dot {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) .dot {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(1) .outline {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(2) .outline {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(3) .outline {
     animation-delay: 1.5s;
   }
-  
+
   .circle:nth-child(4) .outline {
     animation-delay: 1.8s;
   }
-  
+
   .circle:nth-child(5) .outline {
     animation-delay: 2.1s;
   }
-  
+
   @keyframes circle-keys {
     0% {
       transform: scale(1);
       opacity: 1;
     }
-  
+
     50% {
       transform: scale(1.5);
       opacity: 0.5;
     }
-  
+
     100% {
       transform: scale(1);
       opacity: 1;
     }
   }
-  
+
   @keyframes dot-keys {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(0);
     }
-  
+
     100% {
       transform: scale(1);
     }
   }
-  
+
   @keyframes outline-keys {
     0% {
       transform: scale(0);
@@ -808,7 +815,7 @@ input {
       outline-offset: 0;
       opacity: 1;
     }
-  
+
     100% {
       transform: scale(1);
       outline: solid 0 transparent;
@@ -817,39 +824,41 @@ input {
     }
   }
 }
-@media(max-width:367px){
-  .all{
-    height:150vh;
+@media (max-width: 367px) {
+  body {
+    height: 100vh;
+  }
+  .all {
     background-color: #ffcd4b;
   }
-  .flex{  
-    padding-left:10px;
+  .flex {
+    padding-left: 10px;
   }
-  .image img{
-    width:150px;
+  .image img {
+    width: 150px;
   }
-  input{
+  input {
     gap: 10px;
     width: 300px;
     height: 35px;
   }
-  form{
+  form {
     margin-top: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     width: 345px;
     height: 650px;
   }
-  .btns{
+  .btns {
     width: 300px;
   }
-  .btnss{
+  .btnss {
     display: none;
   }
-  .back{
+  .back {
     display: none;
   }
-  .last{
+  .last {
     display: none;
   }
   .loader {
@@ -857,10 +866,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    --color:#ffcd4b;
+    --color: #ffcd4b;
     --animation: 2s ease-in-out infinite;
   }
-  
+
   .loader .circle {
     display: flex;
     align-items: center;
@@ -874,7 +883,7 @@ input {
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
-  
+
   .loader .circle .dot {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -884,7 +893,7 @@ input {
     background-color: #ffcd4b;
     animation: dot-keys var(--animation);
   }
-  
+
   .loader .circle .outline {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -893,90 +902,90 @@ input {
     border-radius: 50%;
     animation: outline-keys var(--animation);
   }
-  
+
   .circle:nth-child(2) {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(2) .dot {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) .dot {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) .dot {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) .dot {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(1) .outline {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(2) .outline {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(3) .outline {
     animation-delay: 1.5s;
   }
-  
+
   .circle:nth-child(4) .outline {
     animation-delay: 1.8s;
   }
-  
+
   .circle:nth-child(5) .outline {
     animation-delay: 2.1s;
   }
-  
+
   @keyframes circle-keys {
     0% {
       transform: scale(1);
       opacity: 1;
     }
-  
+
     50% {
       transform: scale(1.5);
       opacity: 0.5;
     }
-  
+
     100% {
       transform: scale(1);
       opacity: 1;
     }
   }
-  
+
   @keyframes dot-keys {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(0);
     }
-  
+
     100% {
       transform: scale(1);
     }
   }
-  
+
   @keyframes outline-keys {
     0% {
       transform: scale(0);
@@ -984,7 +993,7 @@ input {
       outline-offset: 0;
       opacity: 1;
     }
-  
+
     100% {
       transform: scale(1);
       outline: solid 0 transparent;
@@ -993,23 +1002,25 @@ input {
     }
   }
 }
-@media(max-width:325px){
-  .all{
-    height:150vh;
+@media (max-width: 325px) {
+  body {
+    height: 100vh;
+  }
+  .all {
     background-color: #ffcd4b;
   }
-  .flex{  
-    padding-left:0px;
+  .flex {
+    padding-left: 0px;
   }
-  .image img{
-    width:150px;
+  .image img {
+    width: 150px;
   }
-  input{
+  input {
     gap: 10px;
     width: 260px;
     height: 35px;
   }
-  form{
+  form {
     padding: 30px;
     margin-top: 10px;
     border-bottom-left-radius: 0px;
@@ -1017,19 +1028,19 @@ input {
     width: 320px;
     height: 650px;
   }
-  .btns{
+  .btns {
     width: 260px;
   }
-  .err{
+  .err {
     font-size: 13px;
   }
-  .btnss{
+  .btnss {
     display: none;
   }
-  .back{
+  .back {
     display: none;
   }
-  .last{
+  .last {
     display: none;
   }
   .loader {
@@ -1037,10 +1048,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    --color:#ffcd4b;
+    --color: #ffcd4b;
     --animation: 2s ease-in-out infinite;
   }
-  
+
   .loader .circle {
     display: flex;
     align-items: center;
@@ -1054,7 +1065,7 @@ input {
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
-  
+
   .loader .circle .dot {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -1064,7 +1075,7 @@ input {
     background-color: #ffcd4b;
     animation: dot-keys var(--animation);
   }
-  
+
   .loader .circle .outline {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -1073,90 +1084,90 @@ input {
     border-radius: 50%;
     animation: outline-keys var(--animation);
   }
-  
+
   .circle:nth-child(2) {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(2) .dot {
     animation-delay: 0.3s;
   }
-  
+
   .circle:nth-child(3) .dot {
     animation-delay: 0.6s;
   }
-  
+
   .circle:nth-child(4) .dot {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(5) .dot {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(1) .outline {
     animation-delay: 0.9s;
   }
-  
+
   .circle:nth-child(2) .outline {
     animation-delay: 1.2s;
   }
-  
+
   .circle:nth-child(3) .outline {
     animation-delay: 1.5s;
   }
-  
+
   .circle:nth-child(4) .outline {
     animation-delay: 1.8s;
   }
-  
+
   .circle:nth-child(5) .outline {
     animation-delay: 2.1s;
   }
-  
+
   @keyframes circle-keys {
     0% {
       transform: scale(1);
       opacity: 1;
     }
-  
+
     50% {
       transform: scale(1.5);
       opacity: 0.5;
     }
-  
+
     100% {
       transform: scale(1);
       opacity: 1;
     }
   }
-  
+
   @keyframes dot-keys {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(0);
     }
-  
+
     100% {
       transform: scale(1);
     }
   }
-  
+
   @keyframes outline-keys {
     0% {
       transform: scale(0);
@@ -1164,7 +1175,7 @@ input {
       outline-offset: 0;
       opacity: 1;
     }
-  
+
     100% {
       transform: scale(1);
       outline: solid 0 transparent;

@@ -124,10 +124,10 @@ const Signup = () => {
         // Handle errors
         console.log(error.message);
         if (error.message !== "auth/internal-error") {
-          console.log("online");
+          console.log("offline");
 
         } else {
-          console.log("offline");
+          console.log("online");
         }
       });
 
