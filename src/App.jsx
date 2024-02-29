@@ -9,6 +9,7 @@ import Signup from './component/Signup'
 import Forgotten from './component/Forgotten'
 import Search from './component/Search'
 import Resend from './component/Resend'
+import Page from './component/Page'
 const App = () => {
   const [DeferredPrompt, setDeferredPrompt] = useState("")
   useEffect(() => {
@@ -40,14 +41,15 @@ const App = () => {
     <>
       <Routes>
 
+          <Route path='/' element={<Page />} />
         <Route path="/" element={<Layout />} >
-          <Route path='/' element={<Hyrahome />} />
+          <Route path='/home' element={<Hyrahome />} />
           <Route path='/teaching' element={<Ourteaching />} />
           <Route path='/about' element={<About />} />
         </Route>
 
         <Route>
-        <Route path='/signup' element={<Signup />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path='/resend' element={<Resend />} />
           <Route path='/forgot' element={<Forgotten />} />
           <Route path='/login' element={<Login />} />

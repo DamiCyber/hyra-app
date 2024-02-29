@@ -1,7 +1,6 @@
 
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import { useEffect, useState } from 'react';
 import "../assets/style/signup.css"
 import { useFormik } from 'formik';
 import { useNavigate } from 'react-router-dom';
@@ -23,7 +22,6 @@ const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
 const Signup = () => {
-  const [loading, setLoading] = useState(false);
   const [passwordError, setPasswordError] = useState("");
   const validationSchema = yup.object({
     name: yup.string().required("Required").max(16).min(3),
@@ -68,41 +66,6 @@ const Signup = () => {
       }
     }
   });
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 10000);
-  }, []);
-
-  if (loading) {
-    return <div>
-      <div className="center">
-        <div className="imag">
-          <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921289/logo_ozfrac.png" alt="" />
-        </div>
-        <div class="loader">
-          <div class="circle">
-            <div class="dot"></div>
-            <div class="outline"></div>
-          </div>
-          <div class="circle">
-            <div class="dot"></div>
-            <div class="outline"></div>
-          </div>
-          <div class="circle">
-            <div class="dot"></div>
-            <div class="outline"></div>
-          </div>
-          <div class="circle">
-            <div class="dot"></div>
-            <div class="outline"></div>
-          </div>
-        </div>
-      </div>
-    </div>;
-  }
 
   const google = () => {
 
