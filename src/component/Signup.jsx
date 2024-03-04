@@ -28,7 +28,7 @@ const Signup = () => {
     name: yup.string().required("Required").max(16).min(3),
     username: yup.string().required("Required").max(10).min(3),
     email: yup.string().email("Valid email address").required("Required"),
-    password: yup.string().matches(/^[a-zA-Z0-9]{1,8}$/, "Password must be at most 8 characters and contain only letters and numbers").required("Required"),
+    password: yup.string().matches(/^[a-zA-Z0-9]{1,8}$/, "Password must be at most 8 characters and contain only letters and numbers").min(5,"Password is too short").required("Required"),
     confirmpassword: yup.string().matches(/^[a-zA-z0-9]{8}$/, "Password must match ").required("Required"),
   });
 
