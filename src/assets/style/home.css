@@ -278,9 +278,6 @@ body{
   }
 }
 @media (max-width:430px) {
-  body{
-    overflow-x: hidden;
-  }
   label.logo{
    margin-left:40px;
   }

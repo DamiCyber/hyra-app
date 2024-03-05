@@ -126,6 +126,10 @@
         flex-direction: column-reverse;
         justify-content: space-around;
       }
+      .about h1{
+        width: 280px;
+        line-height: 45px;
+      }
       .about-img{
         margin-top: 15px;
       }
@@ -180,6 +184,10 @@
         padding: 0px;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-left: 14px;
+      }
+      .about h1{
+        width: 290px;
       }
       .about-img{
         margin-top: 15px;
@@ -240,9 +248,11 @@
         padding: 0px;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-left: 10px;
       }
+
       .about h1{
-        width: 320px;
+        width: 290px;
       }
       .about-img{
         margin-left: 80px;
@@ -303,6 +313,10 @@
         padding: 0px;
         flex-direction: column-reverse;
         justify-content: space-around;
+      }
+      .about h1{
+        width: 290px;
+        line-height: 30px;
       }
       .about-img{
         margin-left: 50px;
