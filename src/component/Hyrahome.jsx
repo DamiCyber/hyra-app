@@ -1,6 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import "../assets/style/home.css"
+import React, { useState } from 'react';
+import '../assets/style/home.css';
+
 const Hyrahome = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleShowAll = () => {
+    if (window.innerWidth >= 768) {
+      setShowAll(!showAll);
+    }
+  };
+
   return (
     <div>
       <div className="flex-mother">
@@ -28,10 +37,12 @@ const Hyrahome = () => {
           <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708012183/image_220_fluc4n.png" alt="" />
           <p>As we all know that Du’a is an essential part of our life as a Muslim. Du’a is also included in our app</p>
         </div>
-        <div className="box4">
-          <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013027/image_236_1_o4fugu.png" alt="" />
-          <p>Our app contains the 99 Names of Allah</p>
-        </div>
+        {showAll && (
+          <div className="box4">
+            <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013027/image_236_1_o4fugu.png" alt="" />
+            <p>Our app contains the 99 Names of Allah</p>
+          </div>
+        )}
       </div>
       <div className="teach">
         <h1>Our Teachings</h1>
@@ -46,12 +57,14 @@ const Hyrahome = () => {
         <div className="box7">
           <h3>Stories of the Prophet</h3>
         </div>
-        <div className="box8">
-          <h3>Stories of the Companions</h3>
-        </div>
+        {showAll && (
+          <div className="box8">
+            <h3>Stories of the Companions</h3>
+          </div>
+        )}
       </div>
-      <div className="btn">
-        <h3>View all</h3>
+      <div className="btn" onClick={toggleShowAll}>
+        <h3>{showAll ? 'Hide' : 'View All'}</h3>
       </div>
       <div className="footer">
         <div className="text2">
@@ -62,14 +75,12 @@ const Hyrahome = () => {
           <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013800/image_237_dnlmdy.png" alt="" />
         </div>
       </div>
-      <div className="back">
-
-      </div>
+      <div className="back"></div>
       <div className="last">
         <h3>2023 Copyrights: Hyra</h3>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hyrahome
+export default Hyrahome;

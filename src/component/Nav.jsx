@@ -8,7 +8,6 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = () => {
-    // Close the menu after 300 milliseconds (adjust as needed)
     setTimeout(() => {
       setIsOpen(false);
     }, 300);
