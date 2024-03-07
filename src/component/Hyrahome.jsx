@@ -46,6 +46,9 @@ const Hyrahome = () => {
         <div className="box7">
           <h3>Stories of the Prophet</h3>
         </div>
+        <div className="box8">
+          <h3>Stories of the Companions</h3>
+        </div>
       </div>
       <div className="btn">
         <h3>View all</h3>

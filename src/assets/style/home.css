@@ -129,9 +129,9 @@ text {
 
 .box-family {
   padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .box5 {
   color: #4f0101;
@@ -170,6 +170,22 @@ text {
   height: 250px;
 }
 .box7 h3 {
+  line-height: 40px;
+  width: 200px;
+}
+.box8 {
+  color: #4f0101;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  border: 1px solid #FFCD4B;
+  width: 350px;
+  height: 250px;
+}
+.box8 h3 {
   line-height: 40px;
   width: 200px;
 }
@@ -278,6 +294,12 @@ body{
   }
 }
 @media (max-width:430px) {
+  .box-family {
+    padding: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   label.logo{
    margin-left:40px;
   }
@@ -349,6 +371,10 @@ body{
     line-height: 20px;
    font-size: 12px;
   }
+  .box8 h3{
+    line-height: 20px;
+   font-size: 12px;
+  }
   .box1{
     width: 180px;
     height: 206px;
@@ -374,6 +400,10 @@ body{
     height: 200px;
   }
   .box7{
+    width: 200px;
+    height: 200px;
+  }
+  .box8{
     width: 200px;
     height: 200px;
   }
@@ -408,6 +438,12 @@ body{
 }
 }
 @media (max-width:380px) {
+  .box-family {
+    padding: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   label.logo{
    margin-left:40px;
   }
@@ -479,6 +515,10 @@ body{
     line-height: 20px;
    font-size: 15px;
   }
+  .box8 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
   .box1{
     width: 170px;
     height: 250px;
@@ -504,6 +544,10 @@ body{
     height: 200px;
   }
   .box7{
+    width: 170px;
+    height: 200px;
+  }
+  .box8{
     width: 170px;
     height: 200px;
   }
@@ -542,6 +586,12 @@ body{
 }
 }
 @media (max-width:368px) {
+  .box-family {
+    padding: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   label.logo{
    margin-left:40px;
   }
@@ -613,6 +663,10 @@ body{
     line-height: 20px;
    font-size: 15px;
   }
+  .box8 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
   .box1{
     width: 170px;
     height: 250px;
@@ -638,6 +692,10 @@ body{
     height: 200px;
   }
   .box7{
+    width: 170px;
+    height: 200px;
+  }
+  .box8{
     width: 170px;
     height: 200px;
   }
@@ -676,6 +734,12 @@ body{
 }
 }
 @media (max-width:405px) {
+  .box-family {
+    padding: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   label.logo{
    margin-left:40px;
   }
@@ -747,6 +811,10 @@ body{
     line-height: 20px;
    font-size: 15px;
   }
+  .box8 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
   .box1{
     width: 170px;
     height: 250px;
@@ -772,6 +840,10 @@ body{
     height: 200px;
   }
   .box7{
+    width: 170px;
+    height: 200px;
+  }
+  .box8{
     width: 170px;
     height: 200px;
   }
@@ -810,6 +882,12 @@ body{
 }
 }
 @media (max-width:330px) {
+  .box-family {
+    padding: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   label.logo{
    margin-left:40px;
   }
@@ -882,6 +960,10 @@ body{
     line-height: 20px;
    font-size: 15px;
   }
+  .box8 h3{
+    line-height: 20px;
+   font-size: 15px;
+  }
   .box1{
     width: 150px;
     height: 250px;
@@ -907,6 +989,10 @@ body{
     height: 170px;
   }
   .box7{
+    width: 150px;
+    height: 170px;
+  }
+  .box8{
     width: 150px;
     height: 170px;
   }
