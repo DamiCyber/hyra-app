@@ -37,12 +37,10 @@ const Hyrahome = () => {
           <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708012183/image_220_fluc4n.png" alt="" />
           <p>As we all know that Du’a is an essential part of our life as a Muslim. Du’a is also included in our app</p>
         </div>
-        {showAll && (
           <div className="box4">
             <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1708013027/image_236_1_o4fugu.png" alt="" />
             <p>Our app contains the 99 Names of Allah</p>
           </div>
-        )}
       </div>
       <div className="teach">
         <h1>Our Teachings</h1>
@@ -64,7 +62,7 @@ const Hyrahome = () => {
         )}
       </div>
       <div className="btn" onClick={toggleShowAll}>
-        <h3>{showAll ? 'Hide' : 'View All'}</h3>
+        <h3>{showAll ? 'View Less' : 'View All'}</h3>
       </div>
       <div className="footer">
         <div className="text2">
