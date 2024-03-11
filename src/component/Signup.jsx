@@ -81,7 +81,7 @@ const Signup = () => {
           icon: "success"
         });
         setTimeout(() => {
-          navigate('/home')
+          navigate('/dashboard')
         }, 1000);
       })
       .catch((error) => {

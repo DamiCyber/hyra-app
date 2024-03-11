@@ -10,6 +10,7 @@ import Forgotten from './component/Forgotten'
 import Search from './component/Search'
 import Resend from './component/Resend'
 import Page from './component/Page'
+import Userdashboard from './component/Userdashboard'
 const App = () => {
   const [DeferredPrompt, setDeferredPrompt] = useState("")
   useEffect(() => {
@@ -53,6 +54,7 @@ const App = () => {
           <Route path='/forgot' element={<Forgotten />} />
           <Route path='/login' element={<Login />} />
           <Route path='/search' element={<Search />} />
+          <Route path='/dashboard' element={<Userdashboard/>} />
         </Route>
       </Routes>
     </>
