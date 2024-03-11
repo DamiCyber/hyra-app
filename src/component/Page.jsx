@@ -9,7 +9,7 @@ const Page = () => {
         setTimeout(() => {
             setLoading(false);
             navigate("/home")
-        }, 4000);
+        }, 6000);
     }, []);
 
     if (loading) {

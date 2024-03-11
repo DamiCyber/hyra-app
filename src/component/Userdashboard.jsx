@@ -8,18 +8,19 @@ const Userdashboard = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 4000);
+        }, 6000);
     }, []);
 
     if (loading) {
         return <div>
-
-            <div class="loadingspinner">
-                <div id="square1"></div>
-                <div id="square2"></div>
-                <div id="square3"></div>
-                <div id="square4"></div>
-                <div id="square5"></div>
+            <div className="cover">
+                <div class="loadingspinner">
+                    <div id="square1"></div>
+                    <div id="square2"></div>
+                    <div id="square3"></div>
+                    <div id="square4"></div>
+                    <div id="square5"></div>
+                </div>
             </div>
 
         </div>
