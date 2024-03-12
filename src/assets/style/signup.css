@@ -336,7 +336,7 @@ input {
     height: 40px;
     border: solid 2px #ffcd4b;
     border-radius: 50%;
-    margin: 0 25px;
+    margin: 0 8px;
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
@@ -505,15 +505,6 @@ input {
   .last {
     display: none;
   }
-  .loader {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    --color: #ffcd4b;
-    --animation: 2s ease-in-out infinite;
-  }
-
   .loader .circle {
     display: flex;
     align-items: center;
@@ -523,7 +514,7 @@ input {
     height: 40px;
     border: solid 2px #ffcd4b;
     border-radius: 50%;
-    margin: 0 25px;
+    margin: 0 8px;
     background-color: transparent;
     animation: circle-keys var(--animation);
   }
@@ -1010,7 +1001,7 @@ input {
     background-color: #ffcd4b;
   }
   .flex {
-    padding-left: 0px;
+    padding-left: 5px;
   }
   .image img {
     width: 150px;
@@ -1025,7 +1016,7 @@ input {
     margin-top: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 320px;
+    width: 305px;
     height: 650px;
   }
   .btns {
@@ -1061,7 +1052,7 @@ input {
     height: 40px;
     border: solid 2px #ffcd4b;
     border-radius: 50%;
-    margin: 0 25px;
+    margin: 0 14px;
     background-color: transparent;
     animation: circle-keys var(--animation);
   }

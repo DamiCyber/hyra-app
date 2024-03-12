@@ -242,13 +242,13 @@ form label {
     font-size: 15px;
   }
   .formcard {
-    width: 350px;
+    width: 200px;
     padding: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
   .inpu {
-    width: 280px;
+    width: 200px;
   }
   .btnz {
     width: 280px;
@@ -277,22 +277,22 @@ form label {
     align-items: center;
   }
   .flexall {
-    padding-left: 7px;
+    padding-left: 10px;
   }
   .formheading {
     font-size: 15px;
   }
   .formcard {
-    width: 390px;
+    width: 300px;
     padding: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
   .inpu {
-    width: 310px;
+    width: 270px;
   }
   .btnz {
-    width: 280px;
+    width: 265px;
   }
   .plex {
     font-size: 11px;

@@ -14,6 +14,9 @@ const Userdashboard = () => {
     if (loading) {
         return <div>
             <div className="cover">
+            <div className="imag">
+                    <img src="https://res.cloudinary.com/dhoqtwst9/image/upload/v1707921289/logo_ozfrac.png" alt="" />
+                </div>
                 <div class="loadingspinner">
                     <div id="square1"></div>
                     <div id="square2"></div>
@@ -27,6 +30,7 @@ const Userdashboard = () => {
     }
     return (
         <div>Userdashboard</div>
+        // https://the-trivia-api.com/v2/questions note api for the quiz
     )
 }
 
