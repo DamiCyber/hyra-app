@@ -39,6 +39,7 @@ const Userdashboard = () => {
                 <div>
                     <p>Welcome, {user.displayName}</p>
                     <img src={user.photoURL} alt="" />
+                    <div className="icon"></div>
                     {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
                 </div>
             );
