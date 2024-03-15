@@ -250,3 +250,8 @@
     flex-direction: column;
     align-items: center;
   }
+  .dash{
+    height: 900px;
+    width: 400px;
+    background-color: #ffcd4b;
+  }

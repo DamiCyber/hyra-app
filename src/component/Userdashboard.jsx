@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getAuth } from "firebase/auth";
+// import HomeIcon from '@mui/icons-material/Home';
 import "../assets/style/dashboard.css";
 
 const Userdashboard = () => {
@@ -37,10 +38,16 @@ const Userdashboard = () => {
         if (user) {
             return (
                 <div>
+                    <div className="flex-bo">
+                    <div className="dash"></div>
+                    <div className="user">
                     <p>Welcome, {user.displayName}</p>
-                    <img src={user.photoURL} alt="" />
-                    <div className="icon"></div>
+                    <img src={user.photoURL} alt="" />            
                     {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
+                    </div>
+                    
+                    </div>
+                  
                 </div>
             );
         } else {
