@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAuth } from "firebase/auth";
-// import HomeIcon from '@mui/icons-material/Home';
+import AppsIcon from '@mui/icons-material/Apps';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import "../assets/style/dashboard.css";
 
 const Userdashboard = () => {
@@ -38,16 +39,23 @@ const Userdashboard = () => {
         if (user) {
             return (
                 <div>
-                    <div className="flex-bo">
-                    <div className="dash"></div>
-                    <div className="user">
-                    <p>Welcome, {user.displayName}</p>
-                    <img src={user.photoURL} alt="" />            
-                    {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
+                    <div className="flex-bow">
+                        <div className="dash">
+                            <img src={AppsIcon} alt="" />
+                            <img src={SportsEsportsIcon} alt="" />
+                        </div>
+                        <div className="dash2">
+                            <img src={AppsIcon} alt="" />
+                            <img src={SportsEsportsIcon} alt="" />
+                        </div>
+                        <div className="user">
+                            <p>Welcome,</p><h3>{user.displayName}</h3>
+                            <img src={user.photoURL} alt="" />
+                            {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
+                        </div>
+
                     </div>
-                    
-                    </div>
-                  
+
                 </div>
             );
         } else {
