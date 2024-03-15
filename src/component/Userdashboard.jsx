@@ -41,15 +41,13 @@ const Userdashboard = () => {
                 <div>
                     <div className="flex-bow">
                         <div className="dash">
-                            <img src={AppsIcon} alt="" />
-                            <img src={SportsEsportsIcon} alt="" />
+                            
                         </div>
                         <div className="dash2">
-                            <img src={AppsIcon} alt="" />
-                            <img src={SportsEsportsIcon} alt="" />
+                            
                         </div>
                         <div className="user">
-                            <p>Welcome,</p><h3>{user.displayName}</h3>
+                            <p>Hi, <strong>{user.displayName}</strong></p>
                             <img src={user.photoURL} alt="" />
                             {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
                         </div>

@@ -265,14 +265,6 @@
 .dash {
   height: 653px;
   width: 200px;
-  border-top-right-radius: 75px;
-  background-color: #0802a3;
-}
-.dash2 {
-  height: 653px;
-  width: 200px;
-  border-radius: 50px;
-  margin-left: -65%;
   background-color: #ffcd4b;
 }
 .flex-bow {
@@ -282,12 +274,14 @@
 .user {
   display: flex;
   gap: 25px;
-  align-items: center;
-  margin-top: -59%;
   text-align: center;
 }
 .user img {
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  padding: 10px;
+}
+.user p{
+  padding: 20px;
 }
