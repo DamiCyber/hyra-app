@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { getAuth } from "firebase/auth";
-import AppsIcon from '@mui/icons-material/Apps';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import "../assets/style/dashboard.css";
 
 const Userdashboard = () => {
@@ -17,7 +15,7 @@ const Userdashboard = () => {
         });
         return () => unsubscribe();
     }, []);
-
+    
     if (loading) {
         return (
             <div>
@@ -41,10 +39,7 @@ const Userdashboard = () => {
                 <div>
                     <div className="flex-bow">
                         <div className="dash">
-                            
-                        </div>
-                        <div className="dash2">
-                            
+                             
                         </div>
                         <div className="user">
                             <p>Hi, <strong>{user.displayName}</strong></p>
