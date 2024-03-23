@@ -20,14 +20,13 @@ const Userdashboard = () => {
 
     useEffect(() => {
         if (user) {
-            // Initialize Chart
             const ctx = chartRef.current.getContext('2d');
             new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                     datasets: [{
-                        label: 'Example Chart',
+                        label: 'Performance Chart',
                         data: [65, 59, 80, 81, 56, 55, 40],
                         borderColor: 'rgba(75, 192, 192, 1)',
                         borderWidth: 1
@@ -76,7 +75,7 @@ const Userdashboard = () => {
                                 {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
                             </div>
                             <div className="chart">
-                                <canvas ref={chartRef} width="1200" height="500"></canvas>
+                                <canvas ref={chartRef} width="900" height="500"></canvas>
                             </div>
                         </div>
                     </div>
