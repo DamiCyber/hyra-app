@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import Chart from 'chart.js/auto';
+import React, { useEffect, useState, useRef } from 'react';
 import { getAuth } from "firebase/auth";
 import "../assets/style/dashboard.css";
 
 const Userdashboard = () => {
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState(null);
+    const chartRef = useRef(null);
 
     useEffect(() => {
         setLoading(true);
@@ -15,7 +17,33 @@ const Userdashboard = () => {
         });
         return () => unsubscribe();
     }, []);
-    
+
+    useEffect(() => {
+        if (user) {
+            // Initialize Chart
+            const ctx = chartRef.current.getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                    datasets: [{
+                        label: 'Example Chart',
+                        data: [65, 59, 80, 81, 56, 55, 40],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+    }, [user]);
+
     if (loading) {
         return (
             <div>
@@ -39,23 +67,25 @@ const Userdashboard = () => {
                 <div>
                     <div className="flex-bow">
                         <div className="dash">
-                             
-                        </div>
-                        <div className="user">
-                            <p>Hi, <strong>{user.displayName}</strong></p>
-                            <img src={user.photoURL} alt="" />
-                            {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
-                        </div>
 
+                        </div>
+                        <div className="gen">
+                            <div className="user">
+                                <p>Hi, <strong>{user.displayName}</strong></p>
+                                <img src={user.photoURL} alt="" />
+                                {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
+                            </div>
+                            <div className="chart">
+                                <canvas ref={chartRef} width="1200" height="500"></canvas>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             );
         } else {
             return <p>No user signed in.</p>;
         }
     }
-
 }
 
-export default Userdashboard; 
+export default Userdashboard;

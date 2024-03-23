@@ -272,10 +272,12 @@
   justify-content: space-between;
 }
 .user {
+  margin-left: 800px;
   display: flex;
   gap: 25px;
   text-align: center;
 }
+
 .user img {
   border-radius: 50%;
   width: 60px;
@@ -284,6 +286,16 @@
 }
 .user p{
   padding: 20px;
+}
+.gen{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+.chart{
+  margin-right:500px;
+  padding: 0px;
 }
 .icon{
   box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
