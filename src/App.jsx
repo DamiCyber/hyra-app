@@ -11,6 +11,7 @@ import Search from './component/Search'
 import Resend from './component/Resend'
 import Page from './component/Page'
 import Userdashboard from './component/Userdashboard'
+import Quiz from './component/Quiz'
 const App = () => {
   const [DeferredPrompt, setDeferredPrompt] = useState("")
   useEffect(() => {
@@ -55,6 +56,8 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/search' element={<Search />} />
           <Route path='/dashboard' element={<Userdashboard/>} />
+          <Route path='/quiz' element={<Quiz/>} />
+
         </Route>
       </Routes>
     </>

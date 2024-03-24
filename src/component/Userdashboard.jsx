@@ -2,7 +2,8 @@ import Chart from 'chart.js/auto';
 import React, { useEffect, useState, useRef } from 'react';
 import { getAuth } from "firebase/auth";
 import "../assets/style/dashboard.css";
-
+import quiz from "../assets/images/download.png"
+import { Link } from 'react-router-dom';
 const Userdashboard = () => {
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState(null);
@@ -66,13 +67,15 @@ const Userdashboard = () => {
                 <div>
                     <div className="flex-bow">
                         <div className="dash">
-
+                            <div className="mirage">
+                                <Link to="/quiz" className='mirage'>  <img src={quiz} className='mirage' />
+                                    <p>Quiz</p></Link>
+                            </div>
                         </div>
                         <div className="gen">
                             <div className="user">
                                 <p>Hi, <strong>{user.displayName}</strong></p>
                                 <img src={user.photoURL} alt="" />
-                                {/* // https://the-trivia-api.com/v2/questions note api for the quiz */}
                             </div>
                             <div className="chart">
                                 <canvas ref={chartRef} width="900" height="500"></canvas>

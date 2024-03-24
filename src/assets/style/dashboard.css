@@ -295,11 +295,26 @@
 }
 .chart{
   margin-right:100px;
-  gap: -10px;
   padding: 30px;
 }
 .icon{
   box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+}
+.mirage{
+  color: white;
+  cursor: pointer;
+  width:60px;
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50%;
+}
+.mirage img{
+  box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
 }
