@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-// import axios from 'Axios'
+import axios from 'axios' 
 
 const Quiz = () => {
     const url = " https://the-trivia-api.com/v2/questions"
@@ -12,7 +12,9 @@ const Quiz = () => {
     }, [])
     
   return (
-    <div>Quiz</div>
+    <div>
+      
+    </div>
   )
 }
 
